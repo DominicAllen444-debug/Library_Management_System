@@ -74,7 +74,7 @@ books = [
 
 root = tk.Tk()
 
-root.title("Book Catalog System")
+root.title("Book Catalog")
 
 root.geometry("1100x600")
 
