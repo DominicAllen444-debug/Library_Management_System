@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 from datetime import datetime, timedelta
 
 # =====================================================
-
+# MAIN WINDOW
 # =====================================================
 
 root = tk.Tk()
