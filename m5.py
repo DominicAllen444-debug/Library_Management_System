@@ -7,7 +7,7 @@ from datetime import datetime
 # -----------------------------
 
 root = tk.Tk()
-root.title("Fine Calculation")
+root.title("Fine Calculation 123")
 root.geometry("700x600")
 root.configure(bg="#F4F6F9")
 
