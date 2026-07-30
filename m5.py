@@ -7,13 +7,13 @@ from datetime import datetime
 # -----------------------------
 
 root = tk.Tk()
-root.title("Fine Calculation")
+root.title("Fine Calculation 123")
 root.geometry("700x600")
 root.configure(bg="#F4F6F9")
 
 title = tk.Label(
     root,
-    text="Library Fine Calc",
+    text="Library Fine Calculation",
     font=("Arial", 22, "bold"),
     bg="#F4F6F9",
     fg="#1F4E79"
