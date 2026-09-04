@@ -1,9 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-
+import subprocess
+import sys
+import os
 # -------------------------------
 # Static Login Credentials
-# ------------------------------_
+# ------------------------------
 users = {
     "admin": {
         "password": "admin123",
@@ -69,24 +71,27 @@ def open_dashboard(role):
     module_frame.pack(pady=25)
 
     buttons = [
-        "Book Catalog",
-        "Book Issue & Return",
-        "Member Management",
-        "Fine Calculation",
-        "Dashboard / Reports"
-    ]
+    ("Book Catalog", "mod2.py"),
+    ("Book Issue & Return", "mod3.py"),
+    ("Member Management", "mod4.py"),
+    ("Fine Calculation", "m5.py"),
+    ("Dashboard / Reports", "m6.py")
+]
 
-    for text in buttons:
-
+    for text, file in buttons:
         tk.Button(
-            module_frame,
-            text=text,
-            width=28,
-            height=2,
-            bg="#1F4E79",
-            fg="white",
-            font=("Arial", 11)
-        ).pack(pady=6)
+        module_frame,
+        text=text,
+        width=28,
+        height=2,
+        bg="#1F4E79",
+        fg="white",
+        font=("Arial", 11),
+        command=lambda f=file: os.startfile(
+    os.path.join(os.path.dirname(__file__), f)
+)
+
+    ).pack(pady=6)
 
     tk.Button(
         dashboard,
@@ -241,5 +246,3 @@ demo = tk.Label(
 )
 
 demo.pack(pady=10)
-
-
