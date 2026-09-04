@@ -383,10 +383,3 @@ tk.Button(
 
 
 root.mainloop()
-
-import subprocess
-
-subprocess.Popen([
-    "pythonw",
-    r"C:\Users\harsh\Downloads\mod2.py"
-])
